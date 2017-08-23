@@ -11,7 +11,11 @@ router.get('/about', function(req, res, next) {
 });
 
 router.get('/data', function(req, res, next) {
-  res.render('data', { title: 'data' });
+  res.render('data', {title: 'data' });
+});
+
+router.get('/info', function(req, res, next) {
+  res.render('info', { title: 'info' });
 });
 
 router.get('/digital', function(req, res, next) {
@@ -21,10 +25,6 @@ router.get('/digital', function(req, res, next) {
 
 router.get('/work', function(req, res, next) {
   res.render('work', { title: 'work' });
-});
-
-router.get('/elements', function(req, res, next) {
-  res.render('elements', { title: 'elements' });
 });
 
 module.exports = router;
